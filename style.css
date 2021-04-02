@@ -1,0 +1,134 @@
+:root {
+  --primary-red-200: hsl(356, 100%, 66%);
+  --primary-red-100: hsl(355, 100%, 74%);
+  --primary-blue-500: hsl(208, 49%, 24%);
+  --footer-text-gray-blue-300: hsl(240, 2%, 79%);
+  --footer-body-copy-gray-blue-500: hsl(207, 13%, 34%);
+  --footer-background-black-blue-500: hsl(240, 10%, 16%);
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Overpass", "Ubuntu";
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+/* Start of header content */
+.logo {
+  font-size: 50px;
+  padding-right: 5rem;
+}
+
+.splash {
+  background: linear-gradient(
+    90deg,
+    hsl(355, 100%, 74%) 0%,
+    hsl(356, 100%, 66%) 100%
+  );
+  height: 40rem;
+}
+
+/* Navigation bar */
+a {
+  text-decoration: none;
+}
+
+.nav-buttons {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+nav{
+  display: flex;
+  padding-top: 5rem;
+  margin-left: 5rem;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+
+}
+
+.menu-container{
+  width: 10rem;
+}
+
+.menu-button{
+  display: flex;
+  width: 7rem;
+  flex-direction: column;
+  margin-right: 2rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.menu-content{
+  display: none;
+}
+
+.menu-button:hover .menu-content{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem 1rem;
+  border: 1px solid;
+  border-radius: 5px;
+  line-height: 2rem;
+}
+.menu-button:hover{
+  text-decoration: underline;
+}
+
+/* End of Navigation Bar */
+
+/* Sign up and Sign in buttons */
+.signing{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: 10rem;
+  align-self: flex-start;
+  justify-self: center;
+}
+
+.sign-buttons{
+  display: flex;
+  justify-self: center;
+}
+
+.sign-button{
+  margin-right: 1rem;
+  padding: 15px 30px;
+  border-radius: 2rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.sign-button:hover{
+  background-color: var(--primary-red-100);
+  cursor: pointer;
+}
+/* End pf Sign up and Sign in buttons */
+
+/* End of Header content */
