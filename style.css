@@ -40,6 +40,7 @@ li {
     hsl(356, 100%, 66%) 100%
   );
   height: 40rem;
+  border-bottom-left-radius: 150px;
 }
 
 /* Navigation bar */
@@ -63,11 +64,15 @@ nav{
 }
 
 .menu{
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: flex-start;
+}
 
+.menu-arrow{
+  margin-left: 2px;
 }
 
 .menu-container{
@@ -83,10 +88,7 @@ nav{
 }
 
 .menu-content{
-  display: none;
-}
-
-.menu-button:hover .menu-content{
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -94,9 +96,27 @@ nav{
   border: 1px solid;
   border-radius: 5px;
   line-height: 2rem;
+  height: 1rem;
+}
+
+.menu-content a{
+  color: black;
+}
+
+.menu-content a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.menu-button:hover .menu-content{
+  visibility: visible;
+  height: auto;
 }
 .menu-button:hover{
   text-decoration: underline;
+}
+.menu-button:hover .menu-arrow{
+  transform: rotate(180deg);
 }
 
 /* End of Navigation Bar */
@@ -115,7 +135,6 @@ nav{
   display: flex;
   justify-self: center;
 }
-
 .sign-button{
   margin-right: 1rem;
   padding: 15px 30px;
@@ -124,11 +143,60 @@ nav{
   border: none;
   color: white;
 }
-
+.sign-up-button{
+  background-color: white;
+  color: var(--primary-red-200);
+}
 .sign-button:hover{
   background-color: var(--primary-red-100);
   cursor: pointer;
+  color: white;
 }
 /* End pf Sign up and Sign in buttons */
 
 /* End of Header content */
+
+/* start of splash text */
+.splash-slogan h1{
+  font-size: 75px;
+}
+.splash-slogan h2{
+  font-size: 20px;
+  margin: 2rem 0 0 15rem;
+}
+.splash-slogan{
+  margin: -25rem 0 0 30rem;
+}
+/* End of splash text */
+
+/* start of splash buttons */
+.splash-slogan-buttons{
+  margin: 2rem 0 0 20rem;
+
+}
+.splash-slogan-start{
+  background-color: white;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  border: none;
+  color: var(--primary-red-200);
+  margin-right: 1rem;
+}
+.splash-slogan-start:hover{
+  cursor: pointer;
+  background-color: var(--primary-red-100);
+  color: white;
+}
+.splash-slogan-learn{
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  border: solid 1px;
+}
+.splash-slogan-learn:hover{
+  cursor: pointer;
+  background-color: white;
+  color: var(--primary-red-200);
+}
