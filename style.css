@@ -35,6 +35,12 @@ header {
   background-repeat: no-repeat;
   background-position: 10% 50%;
 }
+
+.introduction {
+  margin: auto;
+  padding: 40px 100px;
+}
+/* Start of navbar */
 .nav-buttons a {
   text-decoration: none;
   font-weight: bold;
@@ -108,11 +114,6 @@ header {
   color: white;
 }
 
-.introduction {
-  margin: auto;
-  padding: 40px 100px;
-}
-
 .nav-bar {
   list-style-type: none;
   display: flex;
@@ -120,7 +121,8 @@ header {
   flex-wrap: wrap;
   gap: 3em;
 }
-
+/* End of navbar */
+/* Start of header intro */
 .intro {
   display: flex;
   flex-direction: column;
@@ -176,6 +178,7 @@ header {
   background: white;
   color: var(--primary-red-200);
 }
+/* End of header intro */
 /* End of header section */
 
 /* Start of main */
@@ -325,5 +328,15 @@ footer{
   color: white;
   list-style-type: none;
   padding-top: 10px;
+}
+
+.attribution{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.attribution,
+.attribution a{
+  color: white;
 }
 /* End of footer */
