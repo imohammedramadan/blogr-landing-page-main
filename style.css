@@ -25,178 +25,265 @@ ul,
 li {
   margin: 0;
   padding: 0;
-  color: white;
+  color: var(--primary-blue-500);
 }
-/* Start of header content */
-.logo {
-  font-size: 50px;
-  padding-right: 5rem;
+/* Start of header section */
+header {
+  background-image: url("/images/bg-pattern-intro.svg"),
+    linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
+  border-bottom-left-radius: 100px;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
 }
-
-.splash {
-  background: linear-gradient(
-    90deg,
-    hsl(355, 100%, 74%) 0%,
-    hsl(356, 100%, 66%) 100%
-  );
-  height: 40rem;
-  border-bottom-left-radius: 150px;
-}
-
-/* Navigation bar */
-a {
+.nav-buttons a {
   text-decoration: none;
-}
-
-.nav-buttons {
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-nav{
-  display: flex;
-  padding-top: 5rem;
-  margin-left: 5rem;
-  align-items: baseline;
-  justify-content: flex-start;
-}
-
-.menu{
-  z-index: 1;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: flex-start;
-}
-
-.menu-arrow{
-  margin-left: 2px;
-}
-
-.menu-container{
-  width: 10rem;
-}
-
-.menu-button{
-  display: flex;
-  width: 7rem;
-  flex-direction: column;
-  margin-right: 2rem;
-  padding: 0.5rem 0rem 0.5rem 0rem;
-}
-
-.menu-content{
-  visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 1rem 1rem;
-  border: 1px solid;
-  border-radius: 5px;
-  line-height: 2rem;
-  height: 1rem;
-}
-
-.menu-content a{
-  color: black;
-}
-
-.menu-content a:hover{
-  text-decoration: underline;
   font-weight: bold;
+  color: white;
 }
 
-.menu-button:hover .menu-content{
-  visibility: visible;
-  height: auto;
+.drop-list-links a {
+  color: var(--primary-blue-500);
 }
-.menu-button:hover{
+
+.drop-list {
+  display: none;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  list-style-type: none;
+  margin-top: 0.5em;
+}
+
+.drop-list li:hover {
+  cursor: pointer;
   text-decoration: underline;
 }
-.menu-button:hover .menu-arrow{
+
+.drop-list li:hover a {
+  color: var(--primary-red-100);
+}
+
+.nav-buttons a:focus .nav-arrow {
   transform: rotate(180deg);
 }
 
-/* End of Navigation Bar */
+.drop-list-links {
+  padding: 1em 2em;
+}
 
-/* Sign up and Sign in buttons */
-.signing{
+.nav-buttons a:focus + ul {
+  display: inherit;
+}
+
+.nav-buttons:nth-last-child(2) {
+  margin-left: auto;
+}
+
+.sign-in-button {
+  background-color: var(--primary-red-100);
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 1em 2.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.sign-in-button:hover {
+  background-color: white;
+  color: var(--primary-red-100);
+}
+
+.sign-up-button {
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 1em 2.5em;
+  color: var(--primary-red-100);
+  font-weight: bold;
+}
+
+.sign-up-button:hover {
+  background-color: var(--primary-red-100);
+  color: white;
+}
+
+.introduction {
+  margin: auto;
+  padding: 2em 5em;
+}
+
+.nav-bar {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 0em;
+  text-align: center;
+  color: white;
+}
+
+.intro-text h1 {
+  padding-bottom: 0.5em;
+  font-size: 60px;
+  color: white;
+}
+
+.intro-text p {
+  padding-bottom: 2em;
+  font-size: 22px;
+  color: white;
+}
+
+.intro-actions button {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.intro-button-start {
+  background: white;
+  color: var(--primary-red-200);
+  padding: 0.7em 1em;
+  border-radius: 100px;
+}
+
+.intro-button-learn {
+  color: white;
+  background: var(--primary-red-100);
+  padding: 0.7em 1em;
+  border-radius: 100px;
+}
+
+.intro-button-start:hover {
+  background: var(--primary-red-100);
+  color: white;
+}
+
+.intro-button-learn:hover {
+  background: white;
+  color: var(--primary-red-200);
+}
+/* End of header section */
+
+/* Start of main */
+/* Start of the first section "Designed for the future" */
+section {
+  margin-top: 100px;
+}
+
+.designed-for-the-future h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.design-info-section {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  column-gap: 200px;
+}
+
+.design-info-img {
+  background-image: url(images/illustration-editor-desktop.svg);
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 850px;
+  background-size: 1000px 1000px;
+  background-position: 300px -150px;
+}
+
+.design-info-text {
+  max-width: 600px;
+  margin-left: 100px;
+}
+
+.design-info-text h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.design-info-text p {
+  font-size: 18px;
+  margin-bottom: 200px;
+  text-align: justify;
+}
+/* End of the first section "Designed for the future" */
+
+/* Start of the Second section "State of the Art Infrastructure" */
+.state-of-the-art-infrastructure{
+  background-image: url(images/bg-pattern-circles.svg),
+  linear-gradient(100deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-repeat: no-repeat;
+  background-size: 1500px 1500px, cover;
+  background-position: -100% 80%;
+  border-radius: 0 100px 0 100px;
+}
+.state-info-section{
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: 10rem;
-  align-self: flex-start;
-  justify-self: center;
+}
+.state-info-img{
+  position: relative;
+  background-image: url(images/illustration-phones.svg);
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  width: 500px;
+  height: 500px;
+  height: -100px;
+  margin-left: 200px;
+  background-position: 0% -20%;
+}
+.state-info-text{
+  max-width: 550px;
+  align-self: center;
+  margin-left: 200px;
 }
 
-.sign-buttons{
+.state-info-text h3{
+  font-size: 40px;
+  color: white;
+}
+
+.state-info-text p{
+  font-size: 18px;
+  text-align: justify;
+  color: white;
+  margin-top: 20px;
+}
+/* End of the Second section "State of the Art Infrastructure" */
+
+/* Start of the Third section "Free, open, simple" */
+.fos-info-section{
   display: flex;
-  justify-self: center;
+  flex-wrap: wrap;
+  column-gap: 300px;
 }
-.sign-button{
-  margin-right: 1rem;
-  padding: 15px 30px;
-  border-radius: 2rem;
-  background-color: transparent;
-  border: none;
-  color: white;
+.fos-info-img{
+  background-image: url(images/illustration-laptop-desktop.svg);
+  background-repeat: no-repeat;
+  width: 650px;
+  height: 800px;
+  background-position: 85% 0%;
 }
-.sign-up-button{
-  background-color: white;
-  color: var(--primary-red-200);
-}
-.sign-button:hover{
-  background-color: var(--primary-red-100);
-  cursor: pointer;
-  color: white;
-}
-/* End pf Sign up and Sign in buttons */
 
-/* End of Header content */
+.fos-info-text{
+  max-width: 600px;
+  align-self: center;
+  text-align: justify;
+}
+.fos-info-text h3{
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
 
-/* start of splash text */
-.splash-slogan h1{
-  font-size: 75px;
+.fos-info-text p{
+  font-size: 18px;
 }
-.splash-slogan h2{
-  font-size: 20px;
-  margin: 2rem 0 0 15rem;
-}
-.splash-slogan{
-  margin: -25rem 0 0 30rem;
-}
-/* End of splash text */
-
-/* start of splash buttons */
-.splash-slogan-buttons{
-  margin: 2rem 0 0 20rem;
-
-}
-.splash-slogan-start{
-  background-color: white;
-  border-radius: 50px;
-  padding: 1rem 2rem;
-  border: none;
-  color: var(--primary-red-200);
-  margin-right: 1rem;
-}
-.splash-slogan-start:hover{
-  cursor: pointer;
-  background-color: var(--primary-red-100);
-  color: white;
-}
-.splash-slogan-learn{
-  background-color: transparent;
-  border-color: white;
-  color: white;
-  border-radius: 50px;
-  padding: 1rem 2rem;
-  border: solid 1px;
-}
-.splash-slogan-learn:hover{
-  cursor: pointer;
-  background-color: white;
-  color: var(--primary-red-200);
-}
+/* End of the Third section "Free, open, simple" */

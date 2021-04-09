@@ -22,117 +22,159 @@
     <title>Frontend Mentor | [Blogr]</title>
   </head>
   <body>
-    <!-- Background splash -->
-    <div class="splash">
-      <header>
-        <!-- Navigation bar -->
-        <nav>
-          <!-- Website Logo -->
-          <div class="logo">Blogr</div>
-          <!-- Navigation menu and signing buttons -->
-          <div class="menu">
-            <!-- Navigation Product button and its content -->
-            <div class="menu-button">
-              <button class="nav-buttons">
-                Product<img
-                  class="menu-arrow"
-                  src="images/icon-arrow-light.svg"
-                />
-              </button>
-              <div class="menu-content">
-                <a href="#">Overview</a>
-                <a href="#">Pricing</a>
-                <a href="#">Marketplace</a>
-                <a href="#">Features</a>
-                <a href="#">Integrations</a>
-              </div>
-            </div>
-
-            <!-- Navigation Company button and its content -->
-            <div class="menu-button">
-              <button class="nav-buttons">
-                Company<img
-                  class="menu-arrow"
-                  src="images/icon-arrow-light.svg"
-                />
-              </button>
-              <div class="menu-content">
-                <a href="#">About</a>
-                <a href="#">Team</a>
-                <a href="#">Blog</a>
-                <a href="#">Careers</a>
-              </div>
-            </div>
-
-            <!-- Navigation Connect button and its content -->
-            <div class="menu-button">
-              <button class="nav-buttons">
-                Connect<img
-                  class="menu-arrow"
-                  src="images/icon-arrow-light.svg"
-                />
-              </button>
-              <div class="menu-content">
-                <a href="#">Contact</a>
-                <a href="#">Newsletter</a>
-                <a href="#">LinkedIn</a>
-              </div>
-            </div>
-
-            <!-- Sign up and Sign in buttons -->
-            <div class="signing">
-              <div class="signing-buttons">
-                <button class="sign-button sign-up-button">Sign up</button>
-              </div>
-
-              <div class="signing-buttons">
-                <button class="sign-button">Sign in</button>
-              </div>
-            </div>
+    <!-- Start of Header -->
+    <header>
+      <div class="introduction">
+        <div>
+          <!-- Navigation bar start -->
+          <nav>
+            <ul class="nav-bar">
+              <li class="nav-buttons">
+                <img src="images/logo.svg" alt="logo" />
+              </li>
+              <li class="nav-buttons">
+                <a href="#"
+                  >Product<img
+                    class="nav-arrow"
+                    src="images/icon-arrow-light.svg"
+                    alt="arrow"
+                /></a>
+                <ul class="drop-list">
+                  <li class="drop-list-links"><a href="#">Overview</a></li>
+                  <li class="drop-list-links"><a href="#">Pricing</a></li>
+                  <li class="drop-list-links"><a href="#">Marketplace</a></li>
+                  <li class="drop-list-links"><a href="#">Features</a></li>
+                  <li class="drop-list-links"><a href="#">Integrations</a></li>
+                </ul>
+              </li>
+              <li class="nav-buttons">
+                <a href="#"
+                  >Company<img
+                    class="nav-arrow"
+                    src="images/icon-arrow-light.svg"
+                    alt="arrow"
+                /></a>
+                <ul class="drop-list">
+                  <li class="drop-list-links"><a href="#">About</a></li>
+                  <li class="drop-list-links"><a href="#">Team</a></li>
+                  <li class="drop-list-links"><a href="#">Blog</a></li>
+                  <li class="drop-list-links"><a href="#">Careers</a></li>
+                </ul>
+              </li>
+              <li class="nav-buttons">
+                <a href="#"
+                  >Connect<img
+                    class="nav-arrow"
+                    src="images/icon-arrow-light.svg"
+                    alt="arrow"
+                /></a>
+                <ul class="drop-list">
+                  <li class="drop-list-links"><a href="#">Contact</a></li>
+                  <li class="drop-list-links"><a href="#">Newsletter</a></li>
+                  <li class="drop-list-links"><a href="#">LinkedIn</a></li>
+                </ul>
+              </li>
+              <li class="nav-buttons sign-buttons">
+                <button class="sign-in-button">Sign In</button>
+              </li>
+              <li class="nav-buttons sign-buttons">
+                <button class="sign-up-button">Sign Up</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- End of Navigation bar -->
+        <!-- Start of Intro text -->
+        <div class="intro">
+          <div class="intro-text">
+            <h1>A modern publishing platform</h1>
+            <p>Grow your audience and build your online brand</p>
           </div>
-        </nav>
-      </header>
-      <!-- Ending of the header content -->
-    </div>
-    <div class="splash-slogan">
-      <h1>A modern publishing platform</h1>
-      <h2>Grow your audience and build your online brand</h2>
-      <div class="splash-slogan-buttons">
-        <button class="splash-slogan-start">Start For Free</button>
-        <button class="splash-slogan-learn">Learn More</button>
+          <div class="intro-actions">
+            <button class="intro-button-start">Start For Free</button>
+            <button class="intro-button-learn">Learn More</button>
+          </div>
+        </div>
+        <!-- End of Intro text -->
       </div>
-    </div>
-    <!--
-  A modern publishing platform
-  Grow your audience and build your online brand
+    </header>
+    <!-- End of Header -->
+    <!-- Start of Main -->
+    <main>
+      <!-- Start of the first section "Designed for the future" -->
+      <section class="designed-for-the-future">
+        <h2>Designed for the future</h2>
+        <div class="design-info-section">
+          <div class="design-info-text">
+            <h3>Introducing an extensible editor</h3>
+            <p>
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+            <h3>Robust content management</h3>
+            <p>
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
+            </p>
+          </div>
+          <div class="design-info-img"></div>
+        </div>
+      </section>
+      <!-- End of the first section "Designed for the future" -->
+      <!-- Start of the Second section "State of the Art Infrastructure" -->
+      <section class="state-of-the-art-infrastructure">
+        <div class="state-info-section">
+          <div class="state-info-img"></div>
+          <div class="state-info-text">
+            <h3>State of the Art Infrastructure</h3>
+            <p>
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End of the Second section "State of the Art Infrastructure" -->
+      <!-- Start of third section "Free, open, simple" -->
+      <section class="fos">
+        <div class="fos-info-section">
+          <div class="fos-info-img"></div>
+          <div class="fos-info-text">
+            <h3>Free, open, simple</h3>
+            <p>
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+            <h3>Powerful tooling</h3>
+            <p>
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End of third section "Free, open, simple" -->
+    </main>
+    <!-- Ending of Main -->
+    <!-- 
+  
+  
 
-  Start for Free
-  Learn More
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
+  
+  
 
   Product
 
